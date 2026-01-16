@@ -215,7 +215,7 @@ def subgraph_generate(tmp_sample_desc: TmpSampleDesc):
 def main(args):
     entries = {
         "paddle": legacy_main,
-        "torch": torch_main,
+        "torch": legacy_main,
     }
     entries[args.framework](args)
 
